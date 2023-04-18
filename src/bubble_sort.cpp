@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 #include <stdlib.h>
 
@@ -23,16 +24,12 @@ int main(int argc, char *argv[]) {
   int arr[] = {5, 7, 2, 9, 1, 4};
   int n = 6;
 
-  cout << "Unsorted\n";
-  for (size_t i = 0; i < n; i++) {
-    cout << arr[i] << "\n";
-  }
-
   bubble_sort(arr, n);
 
-  cout << "Sorted\n";
-  for (size_t i = 0; i < n; i++) {
-    cout << arr[i] << "\n";
+  for (size_t i = 1; i < n; i++) {
+    if (arr[i - 1] > arr[i]) {
+      exit(EXIT_FAILURE);
+    }
   }
 
   return EXIT_SUCCESS;

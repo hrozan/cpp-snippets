@@ -19,7 +19,7 @@ void bubble_sort(int arr[], int n) {
   }
 }
 
-int main(void) {
+int main(int argc, char *argv[]) {
   int arr[] = {5, 7, 2, 9, 1, 4};
   int n = 6;
 

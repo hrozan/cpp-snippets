@@ -2,7 +2,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/cmake
 # Edit at https://www.toptal.com/developers/gitignore?templates=cmake
 
-cmake_build_Debug/**/*
+build/**/*
 
 ### CMake ###
 CMakeLists.txt.user
